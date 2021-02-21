@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Brygada+1918&family=Nanum+Gothic:wght@400;800&family=Noto+Sans+JP:wght@500;700;900&family=Reggae+One&display=swap');
+
+
 *,*::before,*::after{
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 a{
@@ -10,10 +15,15 @@ li{
   list-style: none;
 }
 
+
+html{
+  overflow-x: hidden;
+}
+
 body{
   font-family: serif;
   min-height: 200vh;
-  overflow-x: none;
+  overflow-x: hidden;
   background-color: rgb(235, 251, 255);
 }
 
@@ -50,54 +60,56 @@ header{
   position: relative;
   left: 0;
   top: 0;
+  /* filter: brightness(.9); */
 }
 
 h1{
   width: 100%;
   height: 40%;
   color: rgb(252, 88, 88);
-  background-color: rgba(255, 255, 255, 0.8);
-  animation: title 3s;
+  background-color: #fff;
+  animation: title 1.2s;
   position: absolute;
   top: 70%;
   font-size: 30px;
   padding: 30px 5px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 @keyframes title{
   0%{
-    opacity: 0;
+    transform: translateX(100%);
   }
 
 
   100%{
-    opacity: 1;
+    transform: none;
   }
 }
 
 
 
 .bottomBar{
-  height: 60px;
+  height: 50px;
   width: 100%;
   position: fixed;
   bottom: 0;
   left: 0;
   background-color: rgb(90, 14, 14);
-  box-shadow: 0px 1px 1px rgb(255, 255, 255);
   z-index: 2;
 }
 
 
 #menuButton{
   position: fixed;
-  top: 0;
-  right: 0;
-  width: 70px;
-  height: 70px;
+  top: 10px;
+  right: 10px;
+  width: 60px;
+  height: 60px;
   background-color: rgb(255, 255, 255);
   cursor: pointer;
   z-index: 5;
+  border-radius: 7px;
 }
 
 #menuButton div{
@@ -123,24 +135,26 @@ h1{
   transform: rotate(45deg);
   background-color: #fff;
   z-index: 2;
+  transition: 2s;
 }
 
 #menuButton.active div:nth-of-type(2){
-  transform: scale(2,35.5);
-  background-color: rgb(90, 14, 14);
+  transform: scale(2.1,30.5);
+  background-color: rgb(231, 78, 78);
   transition: 1s;
 }
 
 #menuButton.active div:nth-of-type(3){
   transform: rotate(-45deg);
   background-color: #fff;
+  transition: 2s;
 }
 
 #topMenu{
   width: 100%;
   position: absolute;
   left: 0;
-  padding: 20px 0px;
+  padding: 15px 0px;
 }
 
 #topMenu ul{
@@ -158,9 +172,9 @@ h1{
   color: rgb(255, 255, 255);
 }
 
-#topBar.active #topMenu {
+/* #topBar.active #topMenu {
   display: none;
-}
+} */
 
 #slideMenu{
   width: 80%;
@@ -168,8 +182,8 @@ h1{
   position: fixed;
   right: 0;
   top: 0;
-  background-color: rgb(90, 14, 14);
-  padding: 150px 10px;
+  background-color: rgb(231, 78, 78);
+  padding: 150px 0px 0px 40px;
   transform: translateX(100%);
   overflow-y: auto;
   opacity: 0;
@@ -211,10 +225,8 @@ h1{
 .block>h2{
   text-align: center;
   font-size: 35px;
-  color: rgb(255, 255, 255);
-  text-shadow: 2px 2px 5px rgb(255, 2, 2);
-  margin-top: -50px;
-  padding-top: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(221, 83, 83);
 }
 
 
@@ -222,21 +234,20 @@ h1{
 .box{
   width: 90%;
   min-height: 30vh;
-  background-color: rgb(90, 14, 14);
-  border: double 10px rgb(255, 255, 255);
-  margin: 70px auto 40px;
+  background-color: rgb(255, 255, 255);
+  margin: 30px auto 40px;
 }
 
 
 
 .box h2{
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   text-align: center;
   font-size: 30px;
   font-family: serif;
   font-weight: bold;
   padding: 20px 10px;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(231, 78, 78);
 }
 
 
@@ -246,7 +257,7 @@ h1{
   width: 90%;
   min-height: 30vh;
   height: auto;
-  color: #fff;
+  color: rgb(54, 54, 54);
   margin: 20px auto;
   text-align: justify;
   font-size: 16px;
@@ -256,17 +267,32 @@ h1{
 
 .box p strong{
   font-size: 20px;
-  color: rgb(255, 108, 248);
+  color: rgb(231, 78, 78);
+  font-weight: bold;
 }
 
 .box p a{
   display: block;
-  padding-top: 30px;
-  color: rgb(255, 47, 47);
+  margin-top: 30px;
+  color: rgb(94, 79, 16);
   font-weight: bold;
   font-size: 20px;
 }
 
+
+#coming{
+  width: 100%;
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  position: relative;
+}
+
+#coming p{
+  position: absolute;
+  top: 100px;
+  left: 35%;
+}
 
 
 

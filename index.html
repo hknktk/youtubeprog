@@ -1,96 +1,100 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"> -->
-  <link rel="stylesheet" href="style.css">
-  <title>モバイルファーストの練習</title>
-</head>
-<body>
-  <div class="mask" id="mask"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"> -->
+    <link rel="stylesheet" href="style.css" />
+    <title>おすすめYouTubeチャンネル</title>
+  </head>
+  <body>
+    <div class="mask" id="mask"></div>
 
-  <header>
-    <div class="background">
-      <h1>独学の私には欠かせない<br>YouTubeチャンネルを<br>紹介します！</h1>
-     </div>
+    <header>
+      <div class="background">
+        <h1>
+          独学の私には欠かせない<br />YouTubeチャンネルを<br />紹介します！
+        </h1>
+      </div>
 
-     <div class="topBar bottomBar" id="topBar bottomBar">
+      <div class="topBar bottomBar" id="topBar bottomBar">
+        <nav id="topMenu">
+          <ul>
+            <li><a href="#a">基礎学習</a></li>
+            <li><a href="#i">ビジネス</a></li>
+            <li><a href="#u">一般教養</a></li>
+          </ul>
+        </nav>
+      </div>
 
-      <nav id="topMenu">
-        <ul>
+      <div class="menuButton" id="menuButton">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <nav id="slideMenu">
+        <ul id="slideList">
           <li><a href="#a">基礎学習</a></li>
           <li><a href="#i">ビジネス</a></li>
           <li><a href="#u">一般教養</a></li>
-       </ul>
+        </ul>
       </nav>
+    </header>
 
-    </div>
-
-     
-     <div class="menuButton" id="menuButton">
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-
-     
-        
-     <nav id="slideMenu">
-      <ul id="slideList">
-        <li><a href="#a">基礎学習</a></li>
-        <li><a href="#i">ビジネス</a></li>
-        <li><a href="#u">一般教養</a></li>
-      </ul>
-    </nav>
-
-     
-
-  </header>
-
-
-  <main>
-
-    <div class="content">
-
-      <div class="block">
-        <h2 id="a">基礎学習</h2>
-        <div class="box">
-          <h2>たにぐちまことさん</h2>
-          <p>「<strong>よくわかるPHPの教科書</strong>」など数多くの書籍を出版し、また<strong>Udemy</strong>でも動画形式の講義を発信しているたにぐちさんの動画が一部無料で見ることができます。<br>特に<strong>JSのフレームワーク</strong>や<strong>Bootstrap</strong>の講座はすべて無料で視聴できるためおすすめです。さらに<strong>有料会員</strong>（月額980円）になればその他のすべての動画（PHPなど）を視聴できるため、そちらもおすすめ。
-            <br><a href="https://www.youtube.com/channel/UCphTq6mefx_15CjD35qgXgA">チャンネルはこちら</a></p>
-
+    <main>
+      <div class="content">
+        <div class="block">
+          <h2 id="a">基礎学習</h2>
+          <div class="box">
+            <h2>たにぐちまことさん</h2>
+            <p>
+              「<strong>よくわかるPHPの教科書</strong>」など数多くの書籍を出版し、また<strong>Udemy</strong>でも動画形式の講義を発信しているたにぐちさんの動画が一部無料で見ることができます。<br />特に<strong>JSのフレームワーク</strong>や<strong>Bootstrap</strong>の講座はすべて無料で視聴できるためおすすめです。さらに<strong>有料会員</strong>（月額980円）になればその他のすべての動画（PHPなど）を視聴できるため、そちらもおすすめ。
+              <br /><a
+                href="https://www.youtube.com/channel/UCphTq6mefx_15CjD35qgXgA"
+                >チャンネルはこちら</a
+              >
+            </p>
+          </div>
+          <div class="box">
+            <h2>しまぶーさん</h2>
+            <p>
+              <strong>ヤフー出身</strong
+              >のエンジニアであり、「できる男」感がひしひしと伝わってくる方。動画の内容としては主に<strong>フロントエンド</strong>に関するものが多く<strong>基礎から応用</strong>まで学ぶことができる。また、プログラミングのみならず<strong>IT業界全体に関する知見</strong>や<strong>起業・経営</strong>に関する動画なども投稿している。
+              <br /><a
+                href="https://www.youtube.com/channel/UCti6dG0zSAetLGGYcgNML4Q"
+                >チャンネルはこちら</a
+              >
+            </p>
+          </div>
+          <div class="box">
+            <h2>TechAcademyさん</h2>
+            <p>
+              厚切りジェイソンさんを広告に起用しているプログラミングスクールとして有名なこちらのスクールですが、YouTubeチャンネルの運営も行っています。こちらのチャンネルでは<strong>プログラミング言語に関する説明</strong>や<strong>学習のハウツー</strong>などについて詳しく説明されています。学習法に迷っている、悩んでいる方に特におすすめです。また、<strong>IT業界への就職・転職</strong>に関しての動画も多いためそのような動画を求めている方にも強くおすすめできるチャンネルです。（<strong>私はスクールの回し者ではないです。</strong>）
+              <br /><a
+                href="https://www.youtube.com/user/techacademyjp/featured"
+                >チャンネルはこちら</a
+              >
+            </p>
+          </div>
+          <div class="box">
+            <h2>Webの神様さん</h2>
+            <p>
+              主に<strong>HTML、CSS</strong>に関しての動画を投稿している方。特徴としては初学者が<strong>挫折しやすいポイント</strong>や使えると便利なものにフォーカスした動画が多く、分野ごとに閲覧できるのが非常に<strong>初学者の助け</strong>になります。また、初学者が躓きやすい<storng>模写</storng>に関する動画も投稿されており、見ると模写の挫折ポイントを乗り越える支えとなるはずです。
+              <br /><a
+                href="https://www.youtube.com/channel/UCVx34dwwm34Rs9rxyHDZzIg"
+                >チャンネルはこちら</a
+              >
+            </p>
+          </div>
         </div>
-        <div class="box">
-          <h2>しまぶーさん</h2>
-          <p><strong>ヤフー出身</strong>のエンジニアであり、「できる男」感がひしひしと伝わってくる方。動画の内容としては主に<strong>フロントエンド</strong>に関するものが多く<strong>基礎から応用</strong>まで学ぶことができる。また、プログラミングのみならず<strong>IT業界全体に関する知見</strong>や<strong>起業・経営</strong>に関する動画なども投稿している。
-            <br><a href="https://www.youtube.com/channel/UCti6dG0zSAetLGGYcgNML4Q">チャンネルはこちら</a>
-          </p>
-          
+
+        <div id="coming">
+          <p>Coming soon...</p>
         </div>
-        <div class="box">
-          <h2>TechAcademyさん</h2>
-          <p>厚切りジェイソンさんを広告に起用しているプログラミングスクールとして有名なこちらのスクールですが、YouTubeチャンネルの運営も行っています。こちらのチャンネルでは<strong>プログラミング言語に関する説明</strong>や<strong>学習のハウツー</strong>などについて詳しく説明されています。学習法に迷っている、悩んでいる方に特におすすめです。また、<strong>IT業界への就職・転職</strong>に関しての動画も多いためそのような動画を求めている方にも強くおすすめできるチャンネルです。（<strong>私はスクールの回し者ではないです。</strong>）
-            <br><a href="https://www.youtube.com/user/techacademyjp/featured">チャンネルはこちら</a>
-          </p>
 
-        </div>
-        <div class="box">
-          <h2>Webの神様さん</h2>
-          <p>主に<strong>HTML、CSS</strong>に関しての動画を投稿している方。特徴としては初学者が<strong>挫折しやすいポイント</strong>や使えると便利なものにフォーカスした動画が多く、分野ごとに閲覧できるのが非常に<strong>初学者の助け</strong>になります。また、初学者が躓きやすい<storng>模写</storng>に関する動画も投稿されており、見ると模写の挫折ポイントを乗り越える支えとなるはずです。
-            <br><a href="https://www.youtube.com/channel/UCVx34dwwm34Rs9rxyHDZzIg">チャンネルはこちら</a>
-          </p>
-
-        </div>
-      </div>
-
-      <div id="coming">
-        <P>Coming soon...</P>
-      </div>
-
-
-      <!-- <div class="block">
+        <!-- <div class="block">
         <h2 id="i">ビジネス</h2>
         <div class="box">
           <h2>EMPTY</h2>
@@ -138,13 +142,9 @@
 
         </div>
       </div> -->
-
-
-
-    </div>
-
-  </main>
-  <footer></footer>
-  <script src="main.js"></script>
-</body>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="main.js"></script>
+  </body>
 </html>

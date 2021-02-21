@@ -1,0 +1,369 @@
+*,*::before,*::after{
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+body{
+  font-family: serif;
+  min-height: 200vh;
+  overflow-x: none;
+  background-color: rgb(235, 251, 255);
+}
+
+#mask{
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(240, 238, 238, 0.9);
+  z-index: 4;
+  opacity: 0;
+  visibility: hidden;
+  transition: .1s;
+}
+
+#mask.active{
+  opacity: 1;
+  visibility: visible;
+  transition: .3s;
+}
+
+header{
+  height: 400px;
+}
+
+
+
+.background{
+  background: url(./img/back.png) center center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+h1{
+  width: 100%;
+  height: 40%;
+  color: rgb(252, 88, 88);
+  background-color: rgba(255, 255, 255, 0.8);
+  animation: title 3s;
+  position: absolute;
+  top: 70%;
+  font-size: 30px;
+  padding: 30px 5px;
+}
+
+@keyframes title{
+  0%{
+    opacity: 0;
+    transform: scale(0);
+    font-size: 1px;
+  }
+
+
+  100%{
+    opacity: 1;
+    transform: none;
+  }
+}
+
+
+
+.bottomBar{
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(90, 14, 14);
+  box-shadow: 0px 1px 1px rgb(255, 255, 255);
+  z-index: 2;
+}
+
+
+#menuButton{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 70px;
+  height: 70px;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  z-index: 5;
+}
+
+#menuButton div{
+  display: block;
+  height: 2px;
+  width: 50%;
+  background-color: #333;
+  position: absolute;
+  top: 49%;
+  left: 25%;
+  transition: .3s;
+}
+
+#menuButton div:nth-of-type(1){
+  transform: translateY(-15px);
+}
+
+#menuButton div:nth-of-type(3){
+  transform: translateY(15px);
+}
+
+#menuButton.active div:nth-of-type(1){
+  transform: rotate(45deg);
+  background-color: #fff;
+  z-index: 2;
+}
+
+#menuButton.active div:nth-of-type(2){
+  transform: scale(2,35.5);
+  background-color: rgb(90, 14, 14);
+  transition: 1s;
+}
+
+#menuButton.active div:nth-of-type(3){
+  transform: rotate(-45deg);
+  background-color: #fff;
+}
+
+#topMenu{
+  width: 100%;
+  position: absolute;
+  left: 0;
+  padding: 25px;
+}
+
+#topMenu ul{
+  display: flex;
+}
+
+#topMenu li{
+  flex: 1;
+  text-align: center;
+}
+
+#topMenu a{
+  font-style: italic;
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+}
+
+#topBar.active #topMenu {
+  display: none;
+}
+
+#slideMenu{
+  width: 80%;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: rgb(90, 14, 14);
+  padding: 150px 10px;
+  transform: rotateY(90deg);
+  overflow-y: auto;
+  opacity: 0;
+  transition: 0.3s;
+  z-index: 4;
+}
+
+#slideMenu.active{
+  opacity: 1;
+  transform: none;
+  transition: 1s;
+}
+
+#slideMenu li{
+  margin: 40px 0;
+}
+
+#slideMenu a{
+  font-size: 30px;
+  /* font-style: italic; */
+  font-family: serif;
+  color: #fff;
+}
+
+
+.content{
+  width: 100%;
+  min-height: 400vh;
+}
+
+.block{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+  border-radius: 5px;
+}
+
+.block>h2{
+  text-align: center;
+  font-size: 35px;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 5px rgb(255, 2, 2);
+  margin-top: -50px;
+  padding-top: 50px;
+}
+
+
+
+.box{
+  width: 90%;
+  min-height: 30vh;
+  background-color: rgb(90, 14, 14);
+  border: double 10px rgb(255, 255, 255);
+  margin: 70px auto 40px;
+}
+
+
+
+.box h2{
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 30px;
+  font-family: serif;
+  font-weight: bold;
+  padding: 20px 10px;
+  background-color: rgb(255, 255, 255);
+}
+
+
+
+.box p{
+  display: block;
+  width: 90%;
+  min-height: 30vh;
+  height: auto;
+  color: #fff;
+  margin: 20px auto;
+  text-align: justify;
+  font-size: 16px;
+  padding: 20px 10px;
+  border-radius: 5px;
+}
+
+.box p strong{
+  font-size: 20px;
+  color: rgb(255, 108, 248);
+}
+
+.box p a{
+  display: block;
+  padding-top: 30px;
+  color: rgb(255, 47, 47);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:1000px){
+
+  header{
+    height: 500px;
+  }
+
+  .background{
+    height: 100%;
+  }
+
+  h1{
+    height: 70%;
+    top: 40%;
+    font-size: 80px;
+    padding: 40px 100px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: rgb(255, 255, 255);
+  }
+  
+  @keyframes title{
+    0%{
+      opacity: 0;
+      transform: scale(0);
+      font-size: 1px;
+    }
+  
+    100%{
+      opacity: 1;
+      transform: none;
+    }
+  }
+  
+  
+
+
+  #slideMenu{
+    width: 30%;
+    top: 0;
+  }
+
+  .topBar{
+    position: fixed;
+    height: 70px;
+    top: 0;
+  }
+
+  .topBar.active{
+    background-color: rgb(90, 14, 14);
+    transition: 2s;
+    box-shadow: 0px 2px 2px rgb(117, 16, 16);
+  }
+
+  #topMenu{
+    width: 80%;
+  }
+
+  #topMenu a{
+    font-size: 25px;
+  }
+
+  .box{
+    min-height: 100vh;
+  }
+
+  .block>h2{
+    font-size: 50px;
+    padding: 10px;
+    padding-top: 100px;
+    margin-top: -100px;
+  }
+
+  .box h2{
+    font-size: 40px;
+    padding: 5px;
+  }
+
+  .box p{
+    margin-top: 100px;
+    width: 90%;
+    min-height: 70vh;
+  }
+
+
+
+
+}
+

@@ -24,7 +24,6 @@ body {
   font-family: serif;
   min-height: 200vh;
   overflow-x: hidden;
-  background-color: rgb(235, 251, 255);
 }
 
 #mask {
@@ -209,58 +208,85 @@ h1 {
 
 .block {
   width: 100%;
-  display: flex;
-  flex-direction: column;
   margin-top: 70px;
   border-radius: 5px;
+  background-color: #fdfdfd;
 }
 
-.block > h2 {
+.block>h2 {
   text-align: center;
   font-size: 35px;
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(221, 83, 83);
 }
 
+.box .detail{
+  width: 100%;
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .box {
-  width: 90%;
+  width: 100%;
   min-height: 30vh;
   background-color: rgb(255, 255, 255);
-  margin: 30px auto 40px;
+  margin: 30px auto 20px;
+  padding: 10px 10px 30px;
 }
 
 .box h2 {
-  color: rgb(255, 255, 255);
+  color: rgb(179, 105, 105);
   text-align: center;
   font-size: 30px;
-  font-family: serif;
-  font-weight: bold;
-  padding: 20px 10px;
-  background-color: rgb(231, 78, 78);
+  padding: 5px 0px;
+}
+
+.box h2::before{
+  content: "|";
+  padding: 0 5px;
+}
+
+.box .photo{
+  width: 100%;
+  min-height: 30vh;
+}
+
+.box img{
+  display: block;
+  width: 40%;
+  height: 150px;
+  border-radius: 5px;
+  margin: 0 auto;
 }
 
 .box p {
   display: block;
-  width: 90%;
-  min-height: 30vh;
-  height: auto;
+  width: 100%;
   color: rgb(54, 54, 54);
-  margin: 20px auto;
-  text-align: justify;
-  font-size: 16px;
-  padding: 20px 10px;
+  margin: 0 auto 5px;
+  font-size: 14px;
+  padding: 2px;
   border-radius: 5px;
 }
 
-.box p strong {
+.box p::before{
+  content: "✓";
   font-size: 20px;
+  padding: 2px;
+}
+
+.box p strong {
+  font-size: 18px;
   color: rgb(231, 78, 78);
   font-weight: bold;
 }
 
-.box p a {
+.box a {
   display: block;
-  margin-top: 30px;
+  margin: 10px auto;
+  width: 60%;
+  text-align: center;
   color: rgb(94, 79, 16);
   font-weight: bold;
   font-size: 20px;
